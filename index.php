@@ -23,13 +23,11 @@ if ($a != 0) {
 
 if ($d < 0) {
     echo "Роз'язків немає";
-} else {
+} elseif ($d > 0) {
     echo $x = -$b + sqrt($d) / 2;
-
     echo $x = -$b - sqrt($d) / 2;
-}
-if ($a == 0) {
-    echo $x =round((-$b +sqrt($d)) /(2*$a),2);
+} else {
+    echo $x = round((-$b + sqrt($d)) / (2 * $a), 2);
 }
 ?>
 </body>
